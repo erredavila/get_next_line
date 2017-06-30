@@ -23,15 +23,15 @@ get_next_line(fd, &line);
 // Print the line
 ft_putstr(line);
 // Free after you're done using your line
-ft_strdel(&line);
+free(&line);
 
 // To read a whole file
 while (get_next_line(fd, &line))
 {
-		// Print the line
-		ft_putstr(line);
-		// Free after you're done using your line
-		ft_strdel(&line);
+	// Print the line
+	ft_putstr(line);
+	// Free after you're done using your line
+	free(&line);
 }
 ```
 
